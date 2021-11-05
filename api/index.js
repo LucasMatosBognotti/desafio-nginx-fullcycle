@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
   connection.query('SELECT name FROM people', function (err, rows, fields) {
     if (err) throw err;
   
-    let html = '<h1>Full Cycle</h1>';
+    let html = '<h1>Full Cycle Rocks!</h1>';
     rows.forEach((row) => {
       html = html + '<h3>' + row.name + '</h3>';
     });
